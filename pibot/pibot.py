@@ -16,7 +16,7 @@ def mobile():
 
 @socketio.on('update_request')
 def handle_message(data):
-	print(str(data))
+	print(str(data[u'data'][u'l']))
 	emit('telemetry', {"gyro": {"x": random.randrange(1, 5), "y": 9, "z": 0}, "acc": {"x": 1, "y": 2, "z": 3}})
 
 if __name__ == '__main__':
