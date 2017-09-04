@@ -20,4 +20,4 @@ def handle_message(data):
 	emit('telemetry', {"gyro": {"x": random.randrange(1, 5), "y": 9, "z": 0}, "acc": {"x": 1, "y": 2, "z": 3}})
 
 if __name__ == '__main__':
-	socketio.run(app)
+	socketio.run(app, host = '0.0.0.0', debug = False)
