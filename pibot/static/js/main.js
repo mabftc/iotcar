@@ -8,7 +8,7 @@ window.onload = function() {
 	var heading = document.getElementById("heading");
 
 	setInterval(function() {
-		socket.emit('update_request', {data: 'MY GOOD MAN'});
+		socket.emit('update_request', {data: {"l": 100, "r": 100}});
 	}, 100);
 	
 	socket.on('telemetry', function(info_dict) {
