@@ -1,0 +1,35 @@
+h1 {
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+}
+
+#controls {
+	float: center;
+	display: inline-block;
+	text-align: center;
+	margin: 20 auto;
+}
+
+canvas {
+	float: left;
+	border: 1px solid black;
+	height = 700px;
+	width = 600px;
+	margin: 20px;
+}
+
+div {
+	margin: 20px;
+	display: inline-block;
+}
+
+#telemetry {
+	float: left;
+	/*border: 1px solid black;*/
+	height = 500px;
+	margin: 10px;
+	padding: 10px;
+}

@@ -1,0 +1,28 @@
+<html lang = "en">
+	<head>
+		{% include './partials/head.html' %}
+		<script src = "js/main.js"></script>
+		<link rel = "stylesheet" type = "text/css" href = "{{ url_for('static', filename = './css/main.css')}}"/>
+	</head>
+	<body>
+		<h1>PiBot Control Console</h1>
+		<p style = "text-align: center">Looking for the mobile version? Try <a href = "/mobile">here</a>.</p>
+		<center>
+			<div id = "controls" class = "well">
+				<div id = "telemetry">
+					<h3>Telemetry</h3>
+					<hr>
+					Speed: <span id = "speed" ng-bind = "speed">{{ speed }}</span><br>
+					Latency: <span id = "latency" ng-bind = "latency"></span><br>
+					Heading: <span id = "heading" ng-bind = "heading"></span><br><hr>
+					<button ng-click = "speed = speed + 1">Shutdown</button>
+					<button>Reboot</button>
+					<br>
+				</div>
+				<canvas width="600" height="500">Please update your browser to use this program.</canvas>
+			</div>
+		</center>
+		{% include './partials/footer.html' %}
+	</body>
+	<script src = "{{ url_for('static', filename = './js/main.js') }}"></script>
+</html>
