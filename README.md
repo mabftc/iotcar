@@ -1,6 +1,7 @@
 # IoT Car
 Internet-controlled Robot Car (semi-autonomous)
-Below I will describe the project and steps to take.
+
+Below I will describe the project and steps to take. This tutorial is designed for beginners in robotics and programming.
 
 ## Materials
 You'll need the following materials to get started:
